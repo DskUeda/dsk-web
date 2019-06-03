@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* TAB */
+@media screen and (min-width: 600px) {
+    #slide-btn {
+        display: none;
+    }
+    #wrap {
+        .area_main {
+            float: right;
+            width: 75%;
+            padding: 30px 2%;
+        }
+        .area_left {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 25%;
+            height: 100%;
+            height: 100vh;
+            padding: 80px 2%;
+            //border-right: 1px solid $sub_2;
+            box-shadow: 1px 0px 10px 1px $sub_2;
+            ul {
+                li {
+                    margin-bottom: 1em;
+                    display: table;
+                    height: 40px;
+                    width: 100%;
+                    border: 1px solid $sub_2;
+                    border-radius: 5px;
+                    &:hover {
+                        //border: 1px solid $sub_3;
+                        a {
+                            span {
+                                &:before {
+                                    border-color: transparent transparent transparent $sub_3;
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        display: table-cell;
+                        //vertical-align: middle;
+                        span {
+                            position: absolute;
+                            left: 0;
+                            line-height: 40px;
+                            &:before {
+                                content: "";
+                                width: 0;
+                                height: 0;
+                                display: inline-block;
+                                border-width: 5px 0 5px 8px;
+                                border-color: transparent transparent transparent $sub_2;
+                                border-style: solid;
+                                //margin-left: -10px;
+                                padding-right: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*PC
+--------------------------------------------------------------*/
+@media screen and (min-width: 769px) {
+    header {
+        padding: 10px 0;
+        width: 200px;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        h1 {
+            padding: 0 20px;
+            height: 40px;
+            a {
+                img {
+                    width: 160px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    #wrap {
+        padding: 0;
+        .area_main {
+            float: none;
+            width: 100%;
+            padding: 20px 30px 50px 230px;
+            h2 {
+                font-size: 36px;
+                margin-bottom: 40px;
+            }
+            h3 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .key {
+                padding-bottom: 280px;
+                margin-bottom: 30px;
+            }
+            article {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+                .area_work {
+                    padding: 40px 20px;
+                    display: table;
+                    .cap {
+                        display: table-cell;
+                        vertical-align: top;
+                        width: 40%;
+                        max-width: 1000px;
+                        padding: 0 30px 0 0;
+                        &.sp {
+                            width: 15%;
+                        }
+                    }
+                    .txt {
+                        display: table-cell;
+                        vertical-align: top;
+                        dl {
+                            dd {
+                                a {
+                                    &:hover {
+                                        background-color: $sub_2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .area_left {
+            float: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            height: 100vh;
+            padding: 80px 20px 0;
+        }
+    }
+    footer {
+        padding: 0 30px 0 230px;
+    }
+}

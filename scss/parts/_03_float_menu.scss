@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* 起動ボタン */
+#slide-btn {
+    position: fixed;
+    top: 10px;
+    right: 2%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    background: url(#{$path}btn_menu.png) no-repeat center top / cover;
+}
+/*メニュー本体*/
+#slide-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $key;
+    z-index: 1000;
+    opacity: .9;
+    .close {
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        background: url(#{$path}btn_close.png) no-repeat center top / cover;
+    }
+    dl {
+        text-align: center;
+        font-size: 24px;
+        display: table-cell;
+        vertical-align: middle;
+        dt {
+            color: $bg;
+            margin-bottom: 20px;
+            font-size: 120%;
+        }
+        dd {
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        color: $bg;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    a {
+        color: $bg;
+    }
+}

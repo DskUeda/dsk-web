@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* ベース
+------------------------------------------------------------*/
+small {
+    font-size: 10px;
+}
+em {
+    font-size: 125%;
+    font-style: normal;
+}
+img {
+    display: block;
+    vertical-align: bottom;
+}
+.clrfix {
+    overflow: hidden;
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}

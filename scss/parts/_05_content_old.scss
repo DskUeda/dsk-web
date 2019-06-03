@@ -1,0 +1,119 @@
+/*パンくず
+--------------------------------------------------------------*/
+.breadcrumbs {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 0 5px;
+    color: #fff;
+    font-size: 10px;
+    a {
+        color: #fff;
+    }
+}
+
+/*コンテンツ
+--------------------------------------------------------------*/
+#main {
+    padding: 0 5px;
+    &.sub {
+        #contents {
+            .cts-item {
+                h3 {
+                    font-size: 12px;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    #contents {
+        width: 100%;
+        .cts-item {
+            width: 100%;
+            background-image: url(images/back.gif);
+            background-color: #fff;
+            -webkit-box-shadow: 0 1px 2.7px 0.3px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 2.7px 0.3px rgba(0, 0, 0, 0.15);
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            box-sizing: border-box;
+            padding: 15px;
+            margin: 0 0 10px;
+            h2 {
+                font-size: 14px;
+                margin-bottom: 10px;
+                border-bottom: dashed 1px #999;
+                line-height: 18px;
+            }
+            .article_tag {
+                a {
+                    font-size: 10px;
+                    color: #fff;
+                    background-color: #444;
+                    text-decoration: none;
+                    padding: 0 5px;
+                    margin-right: 5px;
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                vertical-align: middle;
+                -webkit-box-shadow: 1px 1px 1px #999;
+                box-shadow: 1px 1px 1px #999;
+            }
+            .small {
+                margin: 5px 0;
+            }
+            p {
+                margin: 5px 0;
+                line-height: 16px;
+            }
+            .site-link {
+                display: table;
+                margin: 10px auto 0;
+                border: 1px solid #eee;
+                width: 100%;
+                text-decoration: none;
+                text-align: center;
+                height: 40px;
+                position: relative;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: #fff;
+                box-shadow: 1px 1px 1px #ccc;
+                span {
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-size: 12px;
+                    &:after {
+                        content: ">";
+                        font-weight: bold;
+                        color: #8991F5;
+                        position: absolute;
+                        right: 5px;
+                        top: 50%;
+                        margin-top: -8px;
+                    }
+                }
+            }
+        }
+    }
+}
+.skill-table {
+    display: table;
+}
+.skill-icon, .skill-star {
+    display: table-cell;
+    vertical-align: middle;
+}
+.skill-icon img {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.skill-star {
+    padding-left: 8px;
+}

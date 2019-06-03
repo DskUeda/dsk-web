@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+$path: "../images/";
+$key: #444444;
+$key_2: #de1dd5;
+$bg: #ffffff;
+$sub_1: #f3f3f3;
+$sub_2: #dcdcdc;
+$sub_3: #999999;
+
+
+body {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    position: relative;
+    color: $key;
+    * {
+        box-sizing: border-box;
+    }
+}
+@import "parts/_00_reset.scss";
+@import "parts/_01_base.scss";
+@import "parts/_02_header.scss";
+@import "parts/_03_float_menu.scss";
+@import "parts/_04_left.scss";
+@import "parts/_05_content.scss";
+@import "parts/_06_footer.scss";
+@import "parts/_07_respons.scss";

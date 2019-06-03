@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    margin:0;
+    border:none;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    position: relative;
+}
+div,
+ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+p,a,
+img,
+table,th,td,
+dl,dt,dd,
+form {
+    margin:0;
+    padding:0;
+    border:none;
+    color: $key;
+}
+ul,
+ul ul,
+ul ul ul {
+    list-style:none;
+}
+
+/* HTML5必須
+------------------------------------------------------------*/
+section,article,aside,nav,header,footer,hgroup{
+    display:block;
+}

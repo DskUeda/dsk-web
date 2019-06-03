@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* ヘッダー
+------------------------------------------------------------*/
+header {
+    background-color: $bg;
+    padding: 10px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    h1 {
+        height: 30px;
+        a {
+            display: inline-block;
+            img {
+                width: auto;
+                height: 30px;
+            }
+        }
+    }
+}
